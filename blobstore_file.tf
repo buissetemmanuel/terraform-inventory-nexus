@@ -7,3 +7,8 @@ resource "nexus_blobstore_file" "maven" {
   name = "maven"
   path = "/nexus-data/blobstore-maven"
 }
+
+resource "nexus_blobstore_file" "npm" {
+  name = "npm"
+  path = "/nexus-data/blobstore-npm"
+}
