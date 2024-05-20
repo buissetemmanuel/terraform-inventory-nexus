@@ -14,7 +14,7 @@ resource "nexus_security_user" "docker_user" {
   lastname  = "User"
   email     = "info@buisset.ch"
   password  = var.NEXUS_DOCKER_PASSWORD
-  roles     = ["docker-central-read", "docker-releases-add", "docker-snapshots-add"]
+  roles     = ["docker-central", "docker-releases", "docker-snapshots"]
   status    = "active"
 }
 
@@ -24,6 +24,6 @@ resource "nexus_security_user" "maven_user" {
   lastname  = "User"
   email     = "info@buisset.ch"
   password  = var.NEXUS_MAVEN_PASSWORD
-  roles     = ["maven-central-read", "maven-releases-add", "maven-snapshots-add"]
+  roles     = ["maven-central", "maven-releases", "maven-snapshots"]
   status    = "active"
 }

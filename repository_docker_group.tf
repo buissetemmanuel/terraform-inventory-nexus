@@ -4,8 +4,8 @@ resource "nexus_repository_docker_group" "docker_central" {
 
   docker {
     force_basic_auth = false
-    http_port        = 8082
     v1_enabled       = false
+    http_port        = 8082
   }
 
   group {

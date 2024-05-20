@@ -1,5 +1,5 @@
 provider "nexus" {
   password = var.NEXUS_PASSWORD
-  url      = "https://nexus.buisset.ch"
-  username = "admin"
+  url      = var.NEXUS_API_URL
+  username = var.NEXUS_USERNAME
 }

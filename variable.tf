@@ -1,3 +1,11 @@
+variable "NEXUS_API_URL" {
+  sensitive = true
+}
+
+variable "NEXUS_USERNAME" {
+  sensitive = true
+}
+
 variable "NEXUS_PASSWORD" {
   sensitive = true
 }
